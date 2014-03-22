@@ -3,6 +3,8 @@
 <head>
 	<title>Frontend Coding Test</title>
 	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+	<link type="text/css" rel="stylesheet" href="../css/tab.css" />
+	<script type="text/javascript" src="../js/tab.js" ></script>
 	<style type="text/css">
 		.picture {
 			background-color: #F9F9F9;
@@ -12,50 +14,33 @@
 			width: 647px;
 			color: #000;
 		}
-		
+
 		.picture img {
 			border: 1px solid #CCCCCC;
 			vertical-align:middle; margin-bottom: 3px;
 		}
 	</style>
 </head>
-<body>	
+<body onload="createTabViewer();">
 	<div id="headwrap">
 		<div class="head">
 			<div class="logo">Riot Games</div>
 		</div>
 	</div>
 	<div id="content">
-		<h1><span class="red">Tabbed</span> content</h1>
-
-		<p>
-			Using HTML, CSS, and JavaScript, create a functional tabbed content container in the div below.  Each tab should contain different content, and content should change when clicking on a different tab.
-		</p>
-
-		<div class="picture">
-			<img src="../img/tabbed_content.png" />
-			<p>Example of a tabbed content container.</p>
-		</div>
-
-		<hr/>
-
-		<div id="container">
-			Turn this content into a tabbed container.
-
-			<h3>Tab 1</h3>
-			<p>
-				Gingerbread muffin gummies gingerbread macaroon. Lollipop candy applicake toffee faworki. Bear claw topping jelly toffee toffee powder tiramisu candy chupa chups. Chupa chups dragee icing applicake chupa chups dessert. Croissant jelly faworki marzipan tootsie roll marshmallow. Marshmallow toffee sweet roll fruitcake.
-			</p>
-
-			<h3>Tab 2</h3>
-			<p>
-				Chocolate faworki croissant brownie halvah macaroon gummi bears wypas. Chupa chups icing gummies pudding dessert carrot cake. Cupcake jelly beans sweet roll icing ice cream apple pie tootsie roll gummi bears marzipan. Brownie gummies chupa chups pie. Cupcake jujubes topping. 
-			</p>
-
-			<h3>Tab 3</h3>
-			<p>
-				Cheesecake jelly beans ice cream lollipop sweet pastry. Chupa chups dessert cheesecake sesame snaps. Cookie ice cream candy canes pastry cake muffin. Icing chocolate sweet gummi bears powder oat cake oat cake lemon drops.
-			</p>
+		<h1><span class="red">Support</span> Characters</h1>
+		<div class="tab-container">
+			<div class="tab-header">
+				<h3>Soraka</h3>
+				<h3>Taric</h3>
+				<h3>Leona</h3>
+			</div>
+			<div class="tab-content">
+				<p>Soraka is old standby, the heavyweight definition of a support character. She uses her abilities to regenerate allies, and later farm creep waves. She can be very squishy and a tempting target for enemy hard AP nuke champions, so be sure to stock up on some armor, MR, and health, and try to stay in the back!</p>
+				<p>Taric is a great support character, in that he offers a full complement of supporting bonuses. Heals, stuns, auras: you name it, he has it. All this wrapped up in a tanky little support champion that is truly, truly... Outrageous.</p>
+				<p>Leona takes tanky support to the next level. Her base armor and health progression plus an enormous amount of interrupt and stun capability makes her a great companion for that ADC who loves to be aggro. Play her with some skill ad guts, and you'll be securing bot lane in no time.</p>
+			</div>
+			<div class="tab-content-display"></div>
 		</div>
 	</div>
 </body>
