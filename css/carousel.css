@@ -1,0 +1,22 @@
+.carousel {
+    width: 750px;
+    height: 266px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel * {
+    float: left;
+    display: block;
+}
+
+.carousel-content {
+    width: 750px;
+    height: 266px;
+}
+
+.carousel-description {
+    width: 270px;
+    height: 236px;
+    padding: 1em;
+}

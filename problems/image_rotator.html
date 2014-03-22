@@ -3,57 +3,65 @@
 <head>
 	<title>Frontend Coding Test</title>
 	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+	<link type="text/css" rel="stylesheet" href="../css/carousel.css" />
+	<script type="text/javascript" src="../js/carousel.js" ></script>
 	<style type="text/css">
-		#rotator {
-			width: 450px;
-			height: 300px;
-			border: 1px solid black;
-			background: #aaa;
-			text-align: center;
-		}
+	#rotator {
+		width: 450px;
+		height: 300px;
+		border: 1px solid black;
+		background: #aaa;
+		text-align: center;
+	}
 	</style>
 </head>
-<body>
+<body onLoad="buildCarousel();">
 	<div id="headwrap">
-	<div class="head">
-		<div class="logo">Riot Games</div>
+		<div class="head">
+			<div class="logo">Riot Games</div>
+		</div>
 	</div>
-</div>
 
-<div id="content">
-	<h1><span class="red">Image</span> Rotator</h1>
+	<div id="content">
+		<h1><span class="red">Image</span> Rotator</h1>
+	<!-- You'll notice that everything else was removed. I felt like those of you judging the entry know the challenge well
+	enough that I could remove the distracting content. -->
 
-	<p>
-		Using the below images, make a rotator in the box below that shows only one of the Katarina skins every 3 seconds.  The rotator should also display the correct image title and description with each image change.
-	</p>
-	<p>
-		It would be really awesome if the slides animated between one another!
-	</p>
+		<div class="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-content">
+					<img src="../img/kat_1.jpg" />
+					<div class="carousel-description">
+						<h2 class="red">Katarina</h4>
+						<p>Katarina is a stealth-assassin style champion.</p>
+					</div>
+				</div>
 
-	<hr />
+				<div class="carousel-content">
+					<img src="../img/kat_2.jpg" />
+					<div class="carousel-description">
+						<h2 class="red">Red Card Katarina</h4>
+						<p>She usually lanes mid, with a strong AP build.</p>
+					</div>
+				</div>
 
-	<h4>Katarina</h4>
-	<p>Fruitcake bonbon donut jelly-o brownie biscuit marzipan pie.</p>
-	<img src="../img/kat_1.jpg" /><br/>
+				<div class="carousel-content">
+					<img src="../img/kat_3.jpg" />
+					<div class="carousel-description">
+						<h2 class="red">Kitty Cat Katarina</h4>
+						<p>However, a Rylai's is recommended for tankiness.</p>
+					</div>
+				</div>
 
-	<h4>Red Card Katarina</h4>
-	<p>Cheesecake marzipan cupcake biscuit candy canes pudding.</p>
-	<img src="../img/kat_2.jpg" /><br/>
-
-	<h4>Kitty Cat Katarina</h4>
-	<p>Applicake topping halvah lemon drops wypas cotton candy.</p>
-	<img src="../img/kat_3.jpg" /><br/>
-
-	<h4>High Command Katarina</h4>
-	<p>Oat cake macaroon souffle cupcake chupa chups chocolate bar bear claw dragee lemon drops.</p>
-	<img src="../img/kat_4.jpg" /><br/>
-
-	<hr/>
-
-	<div id="rotator">
-		Rotator Here
+				<div class="carousel-content">
+					<img src="../img/kat_4.jpg" />
+					<div class="carousel-description">
+						<h2 class="red">High Command Katarina</h4>
+						<p>This is due to recent and questionable changes by our friends at Riot. ;)</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
-
 </body>
 </html>
