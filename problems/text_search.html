@@ -3,8 +3,9 @@
 <head>
 	<title>Frontend Coding Test | Text Search</title>
 	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+	<script src="../js/search.js" ></script>
 </head>
-<body>
+<body onload="start();">
 <div id="headwrap">
 	<div class="head">
 		<div class="logo">Riot Games</div>
@@ -13,7 +14,7 @@
 <div id="content">
 	<h1><span class="red">Text</span> Search</h1>
 	<p>
-		There are two main components below, a search form and a text article about turtles. The form should be setup such that a word or phase can be entered in the search form, and the number of occurences of that phrase is shown below. 
+		There are two main components below, a search form and a text article about turtles. The form should be setup such that a word or phase can be entered in the search form, and the number of occurences of that phrase is shown below.
 	</p>
 	<p>
 		For example, in the below text there are two occurences of the word "Testudines" so if you put that word in the search form, and submit, the results should say:
@@ -28,17 +29,16 @@
 
 	<h2>Search</h2>
 	<form>
-		<input type="text" id="search_input" value="llama" />
-		<input type="submit" value="Search" />
+		<input type="text" id="search-input" value="llama" />
 	</form>
 
 	<h3>Results</h3>
-	Found 0 occurances of the word "llama" in the below text.
+	<p id="result-message">Found 0 occurances of the word "llama" in the below text.</p>
 
 	<hr/>
 
 	<h2>Search Text</h2>
-	<div id="search_text">
+	<div id="search-text">
 		<p>
 			<b>Turtles</b> are <a href="/wiki/Reptile" title="Reptile">reptiles</a> of the <a href="/wiki/Order_(biology)" title="Order (biology)">order</a> <b>Chelonii</b><sup id="cite_ref-Dubois_2-0" class="reference"><a href="#cite_note-Dubois-2"><span>[</span>2<span>]</span></a></sup> or <b>Testudines</b> characterised by a special <a href="/wiki/Bone" title="Bone">bony</a> or <a href="/wiki/Cartilage" title="Cartilage">cartilaginous</a> <a href="/wiki/Animal_shell" title="Animal shell" class="mw-redirect">shell</a> developed from their <a href="/wiki/Rib" title="Rib">ribs</a> and acting as a <a href="/wiki/Shield" title="Shield">shield</a>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup> "Turtle" may either refer to the order as a whole, or to particular turtles which make up a <a href="/wiki/Form_taxon" title="Form taxon" class="mw-redirect">form taxon</a> that is not <a href="/wiki/Monophyletic" title="Monophyletic" class="mw-redirect">monophyletic</a>.
 		</p>
